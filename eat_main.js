@@ -28,4 +28,5 @@ function Candy() {
 }
 var lindsay = new Character({ name: "Lindsay"});
 var oreo = new Candy();
-lindsay.eat(oreo,10);
+console.log(lindsay.eat(oreo,10));
+// continue lindsay.eat(oreo,10) in console until game is over

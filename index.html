@@ -2,9 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Rock Paper Scissors</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1>Rock, Paper, Scissors!</h1>
+      <p class="lead">Click rock, paper or scissors to start the game.</p>
+      <p><a class="btn btn-lg btn-success" onClick="window.location.reload()" href="#" role="button">Refresh page</a></p>
+      <!-- <input type="button" value="Refresh Page" onClick="window.location.reload()"> -->
+    </div>
+
+    <!-- set up a click event so that when you click the pic it is equal to the userChoice -->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <ul id="user-choice">
+        <h2>Rock</h2>
+        <li class="rock">
+          <img src="http://i38.servimg.com/u/f38/12/16/25/08/sans-t12.png" alt="Rock" />
+        </li>
+      </div>
+      <div class="col-lg-4">
+        <h2>Paper</h2>
+        <li class="paper">
+          <img src="http://i38.servimg.com/u/f38/12/16/25/08/sans-t13.png" alt="Paper" />
+        </li>
+     </div>
+      <div class="col-lg-4">
+        <h2>Scissors</h2>
+        <li class="scissors">
+          <img src="http://i38.servimg.com/u/f38/12/16/25/08/sans-t11.png" alt="Scissors" />
+        </li>
+      </div>
+      </ul>
+    </div>
+
+    <div class="result"></div>
+    <!-- <p class="lead"> </p> -->
+
+
+    <p id="example"></p>
+  <div class="col-lg-12">
+    <div class="userScore">User score: </div>
+    <div class="compScore">Computer Score: </div>
+  </div>
+
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <!-- app files -->
   <script src="main.js"></script>

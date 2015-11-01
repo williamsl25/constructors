@@ -1,0 +1,22 @@
+.jumbotron {
+  padding-bottom: 0px; }
+
+.col-lg-4 {
+  text-align: center; }
+  .col-lg-4 li {
+    text-align: center; }
+  .col-lg-4 img {
+    width: 80px;
+    min-height: 80px; }
+
+.result {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 45px;
+  padding-bottom: 0px; }
+
+.userScore, .compScore {
+  font-size: 45px;
+  padding: 25px;
+  display: inline-block;
+  margin-left: 16%; }
